@@ -1,6 +1,6 @@
 ///   <reference types ='cypress'/>
 import ConduitPage from './ConduitPage';
-describe('Login and update and delete post', () =>{
+describe('Login and createArticle and delete Article', () =>{
     it('Login ', ()=>{
         ConduitPage.visitURL()
     //cy.visit("https://react-redux.realworld.io/")
@@ -12,7 +12,7 @@ describe('Login and update and delete post', () =>{
  
     })
 
-    it('Create new Post  ', ()=>{
+    it('Create new Article  ', ()=>{
         ConduitPage.CreatePost()
       //  cy.get('a[href="#editor"]').click()
       //  cy.get('input[placeholder="Article Title"]').type('Cypress Article')
@@ -21,7 +21,7 @@ describe('Login and update and delete post', () =>{
        // cy.get('input[placeholder="Enter tags"]').type('cypress tags')
        // cy.get('button[type="button"]').click()
         })
-    it('delete Post',()=>{
+    it('Delete Article',()=>{
 
       ConduitPage.deletePost()
 
